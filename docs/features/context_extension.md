@@ -63,6 +63,9 @@ Common parameters include:
 - `rope_type`: The type of RoPE implementation (e.g., "yarn", "linear", "dynamic")
 - `factor`: The factor by which to extend the context length
 - `original_max_position_embeddings`: The original maximum position embeddings of the model
-- `max-model-len`: The new maximum model length after extension (original * factor)
 
-Additional parameters may be required depending on the chosen `rope_type`. For example, when using `"rope_type": "yarn"`, you may also need to specify `rope_theta`.
+ **⚠️ Important: These parameters are vLLM‑specific, NOT in Hugging Face Transformers.**
+
+- `max-model-len` / `max_model_len` (vLLM only):  
+   The new maximum sequence length after extension (original * factor).  
+   Used for KV cache pre‑allocation and request limit at serving time.
