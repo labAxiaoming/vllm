@@ -64,8 +64,8 @@ Common parameters include:
 - `factor`: The factor by which to extend the context length
 - `original_max_position_embeddings`: The original maximum position embeddings of the model
 
- **⚠️ Important: These parameters are vLLM‑specific, NOT in Hugging Face Transformers.**
+ **⚠️ Important: This parameter are vLLM‑specific, NOT in Hugging Face Transformers.**
 
-- `max-model-len` / `max_model_len` (vLLM only):  
-   The new maximum sequence length after extension (original * factor).  
-   Used for KV cache pre‑allocation and request limit at serving time.
+- `max_model_len` (vLLM only):  
+  The new maximum sequence length after extension (original * factor).  
+  Used for KV cache pre‑allocation and request limit at serving time.
