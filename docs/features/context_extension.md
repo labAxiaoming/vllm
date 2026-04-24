@@ -1,4 +1,4 @@
-# Context Extension with vLLM
+# Context Extension
 
 !!! note
     The `--rope-scaling` parameter used in older versions of vLLM is no longer supported. Please use the `--hf-overrides` method with `rope_parameters` instead.
